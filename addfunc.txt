@@ -1,0 +1,16 @@
+
+// return type is i32
+// return keyword only needed in the same contexts as rust
+fn i32 add(i32 a, i32 b) = a + b;
+
+// equals sign is optional if curly braces are present
+// brackets are optional if the fn doesn't take arguments
+// though they are still required in fn calls
+fn main {
+    // constants
+    // type is inferred if possible
+    X = 10; // expands to: i32 X = 10;, or in C: const int32_t X = 10;
+    Y = 15;
+    mut z = add(x, y); // mut means mutable, in C: int32_t z = add(x, y);
+    z -= 3; // same in C
+}
